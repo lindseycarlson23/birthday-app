@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center horizontally */
+    height: 100vh; /* Make the container fill the entire viewport height */
+    justify-content: center; /* Center vertically */
+}
+ 
+label {
+    margin-bottom: 10px; /* Add spacing between label and input */
+}
