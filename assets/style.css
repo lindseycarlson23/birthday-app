@@ -1,4 +1,4 @@
-/* custom id to organize user input into a column */
+/* custom id to organize user input into a column 
 #user-input {
     display: flex;
     flex-direction: column;
