@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="./assets/reset.css" />
   <link rel="stylesheet" href="./assets/style.css" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"></script>
 </head>
 
 <body>
@@ -22,22 +23,10 @@
   <div class="border-2 border-black p-2 m-4 flex flex-wrap">
 
     <div class="border-2 border-orange-600 p-2 m-2 w-1/4">
-      <p>Please enter your birthday, or a date of choice:</p>
-
-        <div>
-          <select>
-            <option value="Month Dropdown">January</option>
-            <option value="Month Dropdown">February</option>
-            <option value="Month Dropdown">March</option>
-          </select>
-        </div>
-
-        <div>
-          <select>
-            <option value="Day Dropdown">1</option>
-            <option value="Day Dropdown">2</option>
-            <option value="Day Dropdown">3</option>
-          </select>
+      <label for="birthday">Enter your birthday:</label>
+    <input type="date" id="birthday" placeholder="YYYY-MM-DD">
+    <button onclick="storeBirthday()">Submit</button>
+    <p id="result"></p>
     </div>
 
     <div class="border-2 border-orange-600 p-2 m-2 w-2/3">Results</div>
