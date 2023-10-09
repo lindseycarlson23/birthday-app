@@ -14,16 +14,36 @@
 </head>
 
 <body>
-  <header>
-    Birthday Trivia
+  <header class="w-screen font-medium bg-slate-700 text-center p-4 mb-4">
+    <h1 class="w-screen text-5xl text-cyan-100 p-2">Birthday Trivia</h1>
+    <h2 class="text-xl p-2 text-white">Cute sub-heading</h2>
   </header>
 
-  <div>Search Box</div>
+  <div class="border-2 border-black p-2 m-4 flex flex-wrap">
 
-  <div>Results</div>
+    <div class="border-2 border-orange-600 p-2 m-2 w-1/4">
+      <p>Please enter your birthday, or a date of choice:</p>
+
+        <div>
+          <select>
+            <option value="Month Dropdown">January</option>
+            <option value="Month Dropdown">February</option>
+            <option value="Month Dropdown">March</option>
+          </select>
+        </div>
+
+        <div>
+          <select>
+            <option value="Day Dropdown">1</option>
+            <option value="Day Dropdown">2</option>
+            <option value="Day Dropdown">3</option>
+          </select>
+    </div>
+
+    <div class="border-2 border-orange-600 p-2 m-2 w-2/3">Results</div>
 
 
-
+  </div>
   <script src="./assets/script.js"></script>
 </body>
 
