@@ -1,6 +1,3 @@
-/* custom id to organize user input into a column 
-#user-input {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
