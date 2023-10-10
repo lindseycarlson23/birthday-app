@@ -26,7 +26,7 @@ fetch(historicalURL, {
  
 
 //Billboard 100 API call
-var week = localStorage.getItem(')
+var week = 
 
 var billboardUrl = 'https://billboard-api5.p.rapidapi.com/api/charts/hot-100?week='+week;
 
