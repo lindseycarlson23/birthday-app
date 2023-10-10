@@ -22,20 +22,31 @@ fetch(historicalURL, {
     .then(function(data) {
         console.log(data);
     });
-}   
+
  
 
 //Billboard 100 API call
-    fetch('https://billboard-api5.p.rapidapi.com/api/charts/hot-100', {
-        headers: {
-        'X-RapidAPI-Key': '7e8f3dc8bbmsh74725bf383a10d3p10ec8ejsn093b73e95f52',
-        }
-        
-    })
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function (data) {
-        console.log(data);
-    });
+var week = localStorage.getItem(')
+
+var billboardUrl = 'https://billboard-api5.p.rapidapi.com/api/charts/hot-100?week='+week;
+
+fetch(billboardUrl, {
+    headers: {
+    'X-RapidAPI-Key': '7e8f3dc8bbmsh74725bf383a10d3p10ec8ejsn093b73e95f52',
+    }
+    
+})
+.then(function (response) {
+    return response.json();
+})
+.then(function (data) {
+    console.log(data);
+});
+
+
+// function billboardResults () {
+//     var week = 
+// }
+//how to get user input into the api call
+//loop through responses and limit to 5 with that
 
