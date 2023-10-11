@@ -41,23 +41,29 @@ function storeBirthday() {
              // end messing around
             }); 
 
-    // I moved this to the bottom so it can go after both API calls and we can input the display code above it   
-    // This resulting display is a placeholder that can be replaced with our API results     
-    // document.getElementById('result').textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio ut sem nulla pharetra diam sit amet. Sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi. Pharetra pharetra massa massa ultricies. Diam quam nulla porttitor massa id neque aliquam. Duis tristique sollicitudin nibh sit amet. Nisl pretium fusce id velit ut. Eget lorem dolor sed viverra ipsum nunc. Ac feugiat sed lectus vestibulum mattis. Proin fermentum leo vel orci porta non. Leo a diam sollicitudin tempor id eu nisl nunc. Neque gravida in fermentum et. Lacus vel facilisis volutpat est velit egestas. Nunc consequat interdum varius sit amet mattis vulputate enim';
 
-}
+    // billboard 100 variables
+    var week = birthdayData; 
+    var bbContainer = document.getElementById("result-billboard");
+    var bbUrl = 'https://billboard-api5.p.rapidapi.com/api/charts/hot-100?week='+week;
 
-//Billboard 100 API call
-    // fetch('https://billboard-api5.p.rapidapi.com/api/charts/hot-100', {
-    //     headers: {
-    //     'X-RapidAPI-Key': '7e8f3dc8bbmsh74725bf383a10d3p10ec8ejsn093b73e95f52',
-    //     }
-        
-    // })
-    // .then(function (response) {
-    //     return response.json();
-    // })
-    // .then(function (data) {
-    //     console.log(data);
-    // });
+    // billboard 100 API call
+    fetch(bbUrl, {
+        headers: {
+        'X-RapidAPI-Key': '7e8f3dc8bbmsh74725bf383a10d3p10ec8ejsn093b73e95f52',
+        }
+        })
+        .then(function(response) {
+        return response.json();
+        })
+
+        // publish to the web page
+        .then(function(data){
+            var title = data.chart.entries[0].title;
+            var artist = data.chart.entries[0].artist;
+
+            bbContainer.innerHTML = "Number 1 on Billboard 100 was "+"'"+title+","+"'"+" by "+artist+"."
+        })    
+    
+};
 
