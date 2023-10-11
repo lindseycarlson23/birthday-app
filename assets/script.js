@@ -31,14 +31,13 @@ function storeBirthday() {
             })
             .then(function(data) {
              console.log(data);
-             // messing around
-             for (var i = 0; i < data.length; i++) {
+
+             for (var i = 0; i < 5; i++) {
                 var birthdayEvent = document.createElement('li');
 
                 birthdayEvent.innerText = 'On '+data[i].month+'-'+data[i].day+'-'+data[i].year+', '+data[i].event;
-             }
                 birthdayFactsEl.append(birthdayEvent);
-             // end messing around
+             }
             }); 
 
 
