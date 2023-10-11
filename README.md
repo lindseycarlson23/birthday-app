@@ -4,7 +4,7 @@ The Birthday App is a web app where users input their birthday to learn what his
 
 The Birthday App utilizes HTML, CSS, Tailwind, Javascript, Day.js, local browser storage, and 3rd party APIs.
 
-The Birthday App can be found at the following URL:
+The Birthday App can be found at the following URL: https://lindseycarlson23.github.io/birthday-app/
 
 ![Screenshot of The Birthday App.](./assets/app-screenshot.png)
 
