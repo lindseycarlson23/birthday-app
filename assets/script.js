@@ -31,57 +31,32 @@ function storeBirthday() {
             }); 
 
 
-  
-        var week = birthdayData; 
-        var bbContainer = document.getElementById("result-billboard");
-        var bbUrl = 'https://billboard-api5.p.rapidapi.com/api/charts/hot-100?week='+week;
+    // billboard 100 variables
+    var week = birthdayData; 
+    var bbContainer = document.getElementById("result-billboard");
+    var bbUrl = 'https://billboard-api5.p.rapidapi.com/api/charts/hot-100?week='+week;
 
-        fetch(bbUrl, {
-            headers: {
-            'X-RapidAPI-Key': '7e8f3dc8bbmsh74725bf383a10d3p10ec8ejsn093b73e95f52',
-            }
-            })
-            .then(function(response) {
-            return response.json();
-            })
+    // billboard 100 API call
+    fetch(bbUrl, {
+        headers: {
+        'X-RapidAPI-Key': '7e8f3dc8bbmsh74725bf383a10d3p10ec8ejsn093b73e95f52',
+        }
+        })
+        .then(function(response) {
+        return response.json();
+        })
 
-            .then(function(data){
-                var title = data.chart.entries[0].title;
-                var artist = data.chart.entries[0].artist;
+        // publish to the web page
+        .then(function(data){
+            var title = data.chart.entries[0].title;
+            var artist = data.chart.entries[0].artist;
 
-
-                bbContainer.innerHTML = "Number 1 on Billboard 100 was "+"'"+title+","+"'"+" by "+artist+"."
-                
-                
-            })
-            
-
-//document getELementbyID
-// innerText or innerHTML
-
-            // var chart = data;
-            // chart = data.chart;
-            //     console.log(chart)
-
-            // var keys = object.keys("chart")
-
-
-            ///I'm getting chart object and I need entries array
-        
-            // .then(function(data) {
-            //     console.log(data);
-            //     for (var i=0; i < 5; i++) {
-            //         var bbEvent = document.createElement('li');
-            //         bbEvent.innerText = data[i];
-            //     }
-            //     bbContainer.append(bbEvent);
-            // })
-            
-       
+            bbContainer.innerHTML = "Number 1 on Billboard 100 was "+"'"+title+","+"'"+" by "+artist+"."
+        })    
     
 }; 
 
-//Billboard 100 API call
+
     
                 
     
