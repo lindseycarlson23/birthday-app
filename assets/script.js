@@ -38,6 +38,7 @@ function storeBirthday() {
                 birthdayEvent.innerText = 'On '+data[i].month+'-'+data[i].day+'-'+data[i].year+', '+data[i].event;
              }
                 birthdayFactsEl.append(birthdayEvent);
+                
              // end messing around
             }); 
 
