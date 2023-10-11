@@ -48,10 +48,11 @@ function storeBirthday() {
 
         // publish to the web page
         .then(function(data){
-            var title = data.chart.entries[0].title;
-            var artist = data.chart.entries[0].artist;
-
-            bbContainer.innerHTML = "Number 1 on Billboard 100 was "+"'"+title+","+"'"+" by "+artist+"."
+            var title1 = data.chart.entries[0].title;
+            var artist1 = data.chart.entries[0].artist;
+          
+            bbContainer.innerHTML = "Number 1 on Billboard 100 was "+"'"+title1+","+"'"+" by "+artist1+"."
+        
         })    
     
 }; 
