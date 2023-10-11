@@ -31,6 +31,21 @@ THEN I see results for that new date
 
 ![wireframe of The Birthday App.](./assets/wireframe.png)
 
+## APIs Used
+
+Historical Events API - API Ninjas https://api-ninjas.com/api/historicalevents
+
+Billboard Music API https://rapidapi.com/DevoCat/api/billboard-api5
+
+## Future Development
+
+User Experience - Return additional birthdate-related information such as celebrity birthdays, Top 5 songs with links to YouTube or Spotify Music, obscure holidays, and more historical events.
+
+User Acquisition - Add feature for users to share their results to FaceBook which will encourage his or her friends to also use the app.
+
+Monetization - Create space for advertising or affiliate links to birthday-related products.
+
+
 ## Collaborators
 
 Christopher Bartlett https://github.com/cbbartlett
