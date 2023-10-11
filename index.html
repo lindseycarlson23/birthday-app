@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400&family=Merriweather:wght@700&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="./assets/reset.css" />
-  <link rel="stylesheet" href="./dist/output.css" />
+  <!-- <link rel="stylesheet" href="./dist/output.css" /> -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"></script>
 </head>
@@ -37,7 +37,7 @@
             <input type="date" id="birthday" placeholder="YYYY-MM-DD">
             <button class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white" onclick="storeBirthday()">Submit</button>
           </div>
-          <div><p class="mt-6 text-lg leading-8 text-gray-300"id="result"></p></div>
+          <div><ul class="mt-6 text-lg leading-8 text-gray-300"id="result"></ul></div>
         </div>
         <!--This is the container for the image-->
         <div class="relative mt-16 h-80 lg:mt-8">
@@ -49,10 +49,6 @@
   
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
-      integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
-      crossorigin="anonymous">
-  </script>
   <script src="./assets/script.js"></script>
 </body>
 
