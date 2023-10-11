@@ -4,7 +4,7 @@ The Birthday App is a web app where users input their birthday to learn what his
 
 The Birthday App utilizes HTML, CSS, Tailwind, Javascript, Day.js, local browser storage, and 3rd party APIs.
 
-The Birthday App can be found at the following URL:
+The Birthday App can be found at the following URL: https://lindseycarlson23.github.io/birthday-app/
 
 ![Screenshot of The Birthday App.](./assets/app-screenshot.png)
 
@@ -30,6 +30,21 @@ THEN I see results for that new date
 ## Wireframe
 
 ![wireframe of The Birthday App.](./assets/wireframe.png)
+
+## APIs Used
+
+Historical Events API - API Ninjas https://api-ninjas.com/api/historicalevents
+
+Billboard Music API https://rapidapi.com/DevoCat/api/billboard-api5
+
+## Future Development
+
+User Experience - Return additional birthdate-related information such as celebrity birthdays, Top 5 songs with links to YouTube or Spotify Music, obscure holidays, and more historical events.
+
+User Acquisition - Add feature for users to share their results to FaceBook which will encourage his or her friends to also use the app.
+
+Monetization - Create space for advertising or affiliate links to birthday-related products.
+
 
 ## Collaborators
 
