@@ -1,5 +1,5 @@
 // This is where our results will append
-var birthdayFactsEl = document.getElementById('result');
+var birthdayFactsEl = document.getElementById('result-historical');
 
 // function that begins entire progression
 // collects and stores user's birthday in local storage, begins variable manipulation and API calls 
